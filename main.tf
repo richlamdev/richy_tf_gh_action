@@ -42,6 +42,7 @@ resource "aws_instance" "web" {
               #nohup busybox httpd -f -p 8080 &
               python3 -m http.server 8080
               EOF
+
 }
 
 resource "aws_security_group" "web-sg" {
